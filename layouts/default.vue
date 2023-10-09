@@ -3,7 +3,6 @@
     <main>
       <LazyLayoutNavbar />
       <Nuxt />
-      <!-- <nuxt :nuxt-child-key="$route.fullPath" /> -->
       <LazyLayoutFooter />
     </main>
   </client-only>

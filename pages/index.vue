@@ -6,6 +6,10 @@
     <LazyHomeWhyUs />
     <LazyHomeArticles /> -->
 
+    <LazyPagination :totalPages="totalPages" :currentPage.sync="currentPage" :pagesToShow="pagesToShow"
+      :onPageChange="updateCurrentPage" />
+    <p>Current Page: {{ currentPage }}</p>
+
     <button @click="showToast">Show Toast</button>
 
     <form @submit="submitImages">
@@ -66,20 +70,21 @@ export default {
       showButton: false,
 
       uploadedImages: [],
-      uploadedImage: null
+      uploadedImage: null,
+
+      totalPages: 10,
+      currentPage: 1,
+      pagesToShow: 5,
     }
   },
+
+
 
 
 
   async asyncData({ $axios, app, route }) {
   },
 
-
-
-
-  computed: {
-  },
   //  when component load
 
   mounted() {
@@ -209,6 +214,16 @@ export default {
       } catch (error) {
         console.error(error)
       }
+    },
+
+    updateCurrentPage(newPage) {
+      this.currentPage = newPage; // Update the current page in the parent component
+      this.$router.push({
+        query: {
+          ...this.$route.query,
+          page: newPage,
+        },
+      });
     },
 
 
