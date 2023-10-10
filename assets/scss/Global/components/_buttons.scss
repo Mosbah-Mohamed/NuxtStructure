@@ -1,9 +1,8 @@
 /* ============= Start main buttons component =============== */
 .main--btn {
   height: 47px;
-  width: 150px;
   transition: 0.7s;
-  color: #ffffff;
+  color: $white;
   text-transform: capitalize;
   display: flex;
   justify-content: center;
@@ -12,74 +11,16 @@
   outline: none;
   cursor: pointer;
   font-size: 16px;
-  box-shadow: 0px 0px 20px #013fcd57;
   border-radius: 50px;
-  font-family: "Bahij-Helvetica-Neue-75-Bold";
   text-align: center;
-  background: #3f63b6;
-
-  a {
-    color: #ffffff;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Bahij-Helvetica-Neue-75-Bold";
-  }
+  background: $mainColor;
 
   &:hover,
   &:focus {
-    background-color: $white;
-    border: 1px solid #ddd;
-    color: #3f63b6;
-
-    a {
-      color: #3f63b6;
-    }
+    box-shadow: inset -3.5em 0 0 0 #fff, inset 3.5em 0 0 0 #fff;
   }
 }
 
-.second--btn {
-  width: 150px;
-  text-align: center;
-  transition: 0.7s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #d6b05a;
-  outline: none;
-  cursor: pointer;
-  font-size: 16px;
-  height: 47px;
-  background: #ffffff;
-  border: 1px solid #343434;
-  border-radius: 50px;
-  color: $black;
-  text-transform: capitalize;
-  font-family: "Bahij-Helvetica-Neue-75-Bold";
-
-  a {
-    color: $black;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Bahij-Helvetica-Neue-75-Bold";
-  }
-
-  &:hover,
-  &:focus {
-    box-shadow: inset 12em 0 0 0 #3f63b6;
-    color: $white;
-    border: 1px solid transparent;
-
-    a {
-      color: $white;
-    }
-  }
-}
 /* ============== end main buttons component ================ */
 
 // ================== start custom checkbox ===============

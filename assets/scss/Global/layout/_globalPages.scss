@@ -3,8 +3,8 @@
 // install fonts
 
 @font-face {
-  font-family: "BAHIJ_HELVETICA_45-NEUE_LIGHT";
-  src: url(@/assets/fonts/BAHIJ_HELVETICA_45-NEUE_LIGHT.TTF);
+  font-family: "avenir-arabic.otf";
+  src: url(@/assets/fonts/avenir-arabic.otf);
 }
 
 html {
@@ -49,7 +49,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-  font-family: "BAHIJ_HELVETICA_55-NEUE_ROMAN";
+  font-family: $global-font-family;
   font-size: 16px;
   background: #fff;
   // height: 5000px;
@@ -663,7 +663,7 @@ $t-delay: 300ms;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(@/assets/images/auth_bacck.png);
+    // background-image: url(@/assets/images/auth_bacck.png);
   }
 
   .crumb {

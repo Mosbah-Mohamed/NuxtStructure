@@ -46,6 +46,8 @@
       </div>
     </div>
 
+
+
   </section>
 </template>
 
@@ -74,7 +76,9 @@ export default {
       content: '',
       short_description: '',
       image: '',
-      created_at: ''
+      created_at: '',
+
+
 
     }
   },

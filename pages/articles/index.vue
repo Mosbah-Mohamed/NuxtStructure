@@ -7,6 +7,13 @@
       <div class="image" v-for="(image, imageIndex) in images" :key="imageIndex" :effect="'fade'" :useZoomBar="true"
         @click="index = imageIndex" :style="{ backgroundImage: `url(${image})` }"></div>
     </div>
+
+    <button @click="openModal">Open Modal</button>
+    <LazySuccessModal ref="modal">
+      <h2>Modal Content</h2>
+      <!-- Add your modal content here -->
+    </LazySuccessModal>
+
   </div>
 </template>
 
@@ -25,8 +32,16 @@ export default {
         "https://static.toiimg.com/photo/72975551.cms",
       ],
       index: null,
+
     };
   },
+
+  methods: {
+    openModal() {
+      this.$refs.modal.isOpen = true;
+    }
+  }
+
 };
 </script>
 

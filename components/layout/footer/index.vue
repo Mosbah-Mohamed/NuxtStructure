@@ -113,7 +113,7 @@
               <a href=" https://elryad.com/ar/" aria-label="domain" target="_blank" rel="noopener">
                 <div class="cont_img">
                   <div class="image">
-                    <img src="@/assets/images/ryad.png" title="elryad" v-lazy-load alt="elryad image" width="100%"
+                    <!-- <img src="@/assets/images/ryad.png" title="elryad" v-lazy-load alt="elryad image" width="100%" -->
                       height="100%">
                   </div>
                   <span>{{ $t('footer.ryad') }}</span>

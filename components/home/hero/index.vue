@@ -38,8 +38,8 @@
             </div>
 
             <div class="image_back">
-              <img src="@/assets/images/flower.png" title="flower" data-not-lazy loading="lazy" alt="hero image"
-                width="100%" height="100%" />
+              <!-- <img src="@/assets/images/flower.png" title="flower" data-not-lazy loading="lazy" alt="hero image"
+              width="100%" height="100%" /> -->
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
     </div>
 
     <div class="image-right">
-      <img data-src="@/assets/images/flower.png" title="flower" v-lazy-load alt="hero image" width="100%" height="100%" />
+      <!-- <img data-src="@/assets/images/flower.png" title="flower" v-lazy-load alt="hero image" width="100%" height="100%" /> -->
     </div>
 
     <div class="flex-center m-5" v-if="!loading">

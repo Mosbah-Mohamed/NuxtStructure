@@ -23,7 +23,7 @@ export default {
 
       // %s refer to every title on page + global title
 
-      titleTemplate: " %s - Samm",
+      titleTemplate: " %s Samm",
       tittle: "Samm",
 
       meta: [
@@ -86,7 +86,7 @@ export default {
           hid: "icon",
           rel: "icon",
           type: "image/x-icon",
-          href: "Favicon.png",
+          href: "logo.svg",
         },
         ...i18nHead.link,
       ],

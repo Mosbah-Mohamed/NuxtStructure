@@ -43,7 +43,7 @@
     </div>
 
     <div class="image-right">
-      <img data-src="@/assets/images/flower.png" title="flower" v-lazy-load alt="hero image" width="100%" height="100%" />
+      <!-- <img data-src="@/assets/images/flower.png" title="flower" v-lazy-load alt="hero image" width="100%" height="100%" /> -->
     </div>
 
   </section>

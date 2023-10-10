@@ -21,7 +21,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(@/assets/images/auth_bacck.png);
+  // {/* background-image: url(@/assets/images/auth_bacck.png); */}
 
   .auth_lay {
     display: none !important;
